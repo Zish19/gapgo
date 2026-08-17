@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -21,7 +22,7 @@ export default function Footer() {
           
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <img src="/Blur Colors of Shape.png" alt="gapgo Logo" className="w-8 h-8 object-contain" />
+              <img src={logo} alt="gapgo Logo" className="w-8 h-8 object-contain" />
               <span className="font-display font-bold text-xl tracking-tight font-brand">gapgo</span>
             </div>
             <p className="text-sage-muted text-sm leading-relaxed max-w-xs">

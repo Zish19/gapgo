@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,7 +23,7 @@ export default function Navbar() {
         }`}
       >
         <a href="#top" className="flex items-center gap-2 shrink-0">
-          <img src="/Blur Colors of Shape.png" alt="gapgo Logo" className="w-7 h-7 object-contain flex-shrink-0" />
+          <img src={logo} alt="gapgo Logo" className="w-7 h-7 object-contain flex-shrink-0" />
           <span className="font-display font-bold text-lg tracking-tight font-brand text-white">gapgo</span>
         </a>
 
