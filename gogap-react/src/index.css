@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #14312A;
+  --color-pine: #235347;
+  --color-mint: #C9DED6;
+  --color-sage-light: #A3C4B6;
+  --color-sage-mid: #7FA898;
+  --color-sage-muted: #4E7566;
+  --color-success: #0EAD69;
+  --color-paper: #F6F7F6;
+  --color-sand: #EAECE9;
+  
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --shadow-soft: 0 4px 20px rgba(20, 49, 42, 0.05);
+  --shadow-glow: 0 0 15px rgba(201, 222, 214, 0.5);
+  --shadow-lift: 0 10px 25px rgba(20, 49, 42, 0.08);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-brand {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 800 !important;
+    text-transform: lowercase !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .premium-bg {
+    background-color: var(--color-paper);
+    background-image: 
+      radial-gradient(circle at 0% 0%, var(--color-mint) 0%, transparent 40%),
+      radial-gradient(circle at 100% 20%, var(--color-sage-light) 0%, transparent 40%),
+      radial-gradient(circle at 100% 100%, var(--color-mint) 0%, transparent 50%),
+      radial-gradient(circle at 0% 100%, var(--color-sage-mid) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, var(--color-sand) 0%, transparent 60%);
+    background-attachment: fixed;
+  }
+}
